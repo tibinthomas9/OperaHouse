@@ -14,6 +14,13 @@
 		C2A12B1E2ABBA95F00D0878F /* OperaHouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B1D2ABBA95F00D0878F /* OperaHouseTests.swift */; };
 		C2A12B282ABBA95F00D0878F /* OperaHouseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B272ABBA95F00D0878F /* OperaHouseUITests.swift */; };
 		C2A12B2A2ABBA95F00D0878F /* OperaHouseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B292ABBA95F00D0878F /* OperaHouseUITestsLaunchTests.swift */; };
+		C2A12B382ABBAAA300D0878F /* MusicPerformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B372ABBAAA300D0878F /* MusicPerformance.swift */; };
+		C2A12B3A2ABBABC400D0878F /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B392ABBABC400D0878F /* Venue.swift */; };
+		C2A12B3C2ABBAC1200D0878F /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B3B2ABBAC1200D0878F /* Artist.swift */; };
+		C2A12B3F2ABBAF3D00D0878F /* ArtistPerformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B3E2ABBAF3D00D0878F /* ArtistPerformance.swift */; };
+		C2A12B412ABBAFF000D0878F /* VenuePerformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B402ABBAFF000D0878F /* VenuePerformance.swift */; };
+		C2A12B432ABBB3E300D0878F /* VenueModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B422ABBB3E300D0878F /* VenueModelTests.swift */; };
+		C2A12B452ABBB40500D0878F /* ArtistModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B442ABBB40500D0878F /* ArtistModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		C2A12B232ABBA95F00D0878F /* OperaHouseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OperaHouseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2A12B272ABBA95F00D0878F /* OperaHouseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperaHouseUITests.swift; sourceTree = "<group>"; };
 		C2A12B292ABBA95F00D0878F /* OperaHouseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperaHouseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C2A12B372ABBAAA300D0878F /* MusicPerformance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPerformance.swift; sourceTree = "<group>"; };
+		C2A12B392ABBABC400D0878F /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		C2A12B3B2ABBAC1200D0878F /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		C2A12B3E2ABBAF3D00D0878F /* ArtistPerformance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistPerformance.swift; sourceTree = "<group>"; };
+		C2A12B402ABBAFF000D0878F /* VenuePerformance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuePerformance.swift; sourceTree = "<group>"; };
+		C2A12B422ABBB3E300D0878F /* VenueModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueModelTests.swift; sourceTree = "<group>"; };
+		C2A12B442ABBB40500D0878F /* ArtistModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +110,7 @@
 			children = (
 				C2A12B0C2ABBA95C00D0878F /* OperaHouseApp.swift */,
 				C2A12B0E2ABBA95C00D0878F /* ContentView.swift */,
+				C2A12B362ABBAA7B00D0878F /* Model */,
 				C2A12B102ABBA95E00D0878F /* Assets.xcassets */,
 				C2A12B122ABBA95E00D0878F /* Preview Content */,
 			);
@@ -114,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				C2A12B1D2ABBA95F00D0878F /* OperaHouseTests.swift */,
+				C2A12B462ABBB5AC00D0878F /* ModelTests */,
 			);
 			path = OperaHouseTests;
 			sourceTree = "<group>";
@@ -127,6 +143,27 @@
 			path = OperaHouseUITests;
 			sourceTree = "<group>";
 		};
+		C2A12B362ABBAA7B00D0878F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C2A12B372ABBAAA300D0878F /* MusicPerformance.swift */,
+				C2A12B3E2ABBAF3D00D0878F /* ArtistPerformance.swift */,
+				C2A12B402ABBAFF000D0878F /* VenuePerformance.swift */,
+				C2A12B392ABBABC400D0878F /* Venue.swift */,
+				C2A12B3B2ABBAC1200D0878F /* Artist.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C2A12B462ABBB5AC00D0878F /* ModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				C2A12B422ABBB3E300D0878F /* VenueModelTests.swift */,
+				C2A12B442ABBB40500D0878F /* ArtistModelTests.swift */,
+			);
+			path = ModelTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +174,7 @@
 				C2A12B052ABBA95C00D0878F /* Sources */,
 				C2A12B062ABBA95C00D0878F /* Frameworks */,
 				C2A12B072ABBA95C00D0878F /* Resources */,
+				C2A12B3D2ABBACDB00D0878F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -252,13 +290,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C2A12B3D2ABBACDB00D0878F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C2A12B052ABBA95C00D0878F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2A12B412ABBAFF000D0878F /* VenuePerformance.swift in Sources */,
 				C2A12B0F2ABBA95C00D0878F /* ContentView.swift in Sources */,
+				C2A12B3A2ABBABC400D0878F /* Venue.swift in Sources */,
+				C2A12B382ABBAAA300D0878F /* MusicPerformance.swift in Sources */,
+				C2A12B3C2ABBAC1200D0878F /* Artist.swift in Sources */,
 				C2A12B0D2ABBA95C00D0878F /* OperaHouseApp.swift in Sources */,
+				C2A12B3F2ABBAF3D00D0878F /* ArtistPerformance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +330,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2A12B1E2ABBA95F00D0878F /* OperaHouseTests.swift in Sources */,
+				C2A12B452ABBB40500D0878F /* ArtistModelTests.swift in Sources */,
+				C2A12B432ABBB3E300D0878F /* VenueModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
