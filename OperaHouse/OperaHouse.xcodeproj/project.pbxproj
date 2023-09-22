@@ -21,6 +21,14 @@
 		C2A12B412ABBAFF000D0878F /* VenuePerformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B402ABBAFF000D0878F /* VenuePerformance.swift */; };
 		C2A12B432ABBB3E300D0878F /* VenueModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B422ABBB3E300D0878F /* VenueModelTests.swift */; };
 		C2A12B452ABBB40500D0878F /* ArtistModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B442ABBB40500D0878F /* ArtistModelTests.swift */; };
+		C2A12B492ABBCFBB00D0878F /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B482ABBCFBB00D0878F /* APIError.swift */; };
+		C2A12B4B2ABBCFEE00D0878F /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B4A2ABBCFEE00D0878F /* HttpClient.swift */; };
+		C2A12B4D2ABC774E00D0878F /* URLEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B4C2ABC774E00D0878F /* URLEndpoint.swift */; };
+		C2A12B502ABC779400D0878F /* AppEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B4F2ABC779400D0878F /* AppEndPoint.swift */; };
+		C2A12B522ABD1CAB00D0878F /* ArtistsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B512ABD1CAB00D0878F /* ArtistsClient.swift */; };
+		C2A12B542ABD2E4A00D0878F /* ArtistsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B532ABD2E4A00D0878F /* ArtistsListViewModel.swift */; };
+		C2A12B562ABD310B00D0878F /* ArtistsListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B552ABD310B00D0878F /* ArtistsListViewModelTests.swift */; };
+		C2A12B5A2ABD345700D0878F /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B592ABD345700D0878F /* LoadingState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +66,15 @@
 		C2A12B402ABBAFF000D0878F /* VenuePerformance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuePerformance.swift; sourceTree = "<group>"; };
 		C2A12B422ABBB3E300D0878F /* VenueModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueModelTests.swift; sourceTree = "<group>"; };
 		C2A12B442ABBB40500D0878F /* ArtistModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistModelTests.swift; sourceTree = "<group>"; };
+		C2A12B482ABBCFBB00D0878F /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		C2A12B4A2ABBCFEE00D0878F /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		C2A12B4C2ABC774E00D0878F /* URLEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEndpoint.swift; sourceTree = "<group>"; };
+		C2A12B4F2ABC779400D0878F /* AppEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEndPoint.swift; sourceTree = "<group>"; };
+		C2A12B512ABD1CAB00D0878F /* ArtistsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsClient.swift; sourceTree = "<group>"; };
+		C2A12B532ABD2E4A00D0878F /* ArtistsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsListViewModel.swift; sourceTree = "<group>"; };
+		C2A12B552ABD310B00D0878F /* ArtistsListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsListViewModelTests.swift; sourceTree = "<group>"; };
+		C2A12B582ABD332800D0878F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C2A12B592ABD345700D0878F /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,9 +125,13 @@
 		C2A12B0B2ABBA95C00D0878F /* OperaHouse */ = {
 			isa = PBXGroup;
 			children = (
+				C2A12B582ABD332800D0878F /* Info.plist */,
 				C2A12B0C2ABBA95C00D0878F /* OperaHouseApp.swift */,
 				C2A12B0E2ABBA95C00D0878F /* ContentView.swift */,
+				C2A12B472ABBCF5D00D0878F /* Networking */,
+				C2A12B5B2ABD347400D0878F /* Artists */,
 				C2A12B362ABBAA7B00D0878F /* Model */,
+				C2A12B5C2ABD34A700D0878F /* Helpers */,
 				C2A12B102ABBA95E00D0878F /* Assets.xcassets */,
 				C2A12B122ABBA95E00D0878F /* Preview Content */,
 			);
@@ -129,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				C2A12B1D2ABBA95F00D0878F /* OperaHouseTests.swift */,
+				C2A12B552ABD310B00D0878F /* ArtistsListViewModelTests.swift */,
 				C2A12B462ABBB5AC00D0878F /* ModelTests */,
 			);
 			path = OperaHouseTests;
@@ -162,6 +184,50 @@
 				C2A12B442ABBB40500D0878F /* ArtistModelTests.swift */,
 			);
 			path = ModelTests;
+			sourceTree = "<group>";
+		};
+		C2A12B472ABBCF5D00D0878F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C2A12B5E2ABD34F800D0878F /* Core */,
+				C2A12B512ABD1CAB00D0878F /* ArtistsClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		C2A12B4E2ABC777300D0878F /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				C2A12B4C2ABC774E00D0878F /* URLEndpoint.swift */,
+				C2A12B4F2ABC779400D0878F /* AppEndPoint.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		C2A12B5B2ABD347400D0878F /* Artists */ = {
+			isa = PBXGroup;
+			children = (
+				C2A12B532ABD2E4A00D0878F /* ArtistsListViewModel.swift */,
+			);
+			path = Artists;
+			sourceTree = "<group>";
+		};
+		C2A12B5C2ABD34A700D0878F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C2A12B592ABD345700D0878F /* LoadingState.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C2A12B5E2ABD34F800D0878F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C2A12B4E2ABC777300D0878F /* Endpoint */,
+				C2A12B482ABBCFBB00D0878F /* APIError.swift */,
+				C2A12B4A2ABBCFEE00D0878F /* HttpClient.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,8 +384,15 @@
 				C2A12B412ABBAFF000D0878F /* VenuePerformance.swift in Sources */,
 				C2A12B0F2ABBA95C00D0878F /* ContentView.swift in Sources */,
 				C2A12B3A2ABBABC400D0878F /* Venue.swift in Sources */,
+				C2A12B522ABD1CAB00D0878F /* ArtistsClient.swift in Sources */,
+				C2A12B502ABC779400D0878F /* AppEndPoint.swift in Sources */,
 				C2A12B382ABBAAA300D0878F /* MusicPerformance.swift in Sources */,
+				C2A12B4D2ABC774E00D0878F /* URLEndpoint.swift in Sources */,
+				C2A12B4B2ABBCFEE00D0878F /* HttpClient.swift in Sources */,
+				C2A12B5A2ABD345700D0878F /* LoadingState.swift in Sources */,
 				C2A12B3C2ABBAC1200D0878F /* Artist.swift in Sources */,
+				C2A12B492ABBCFBB00D0878F /* APIError.swift in Sources */,
+				C2A12B542ABD2E4A00D0878F /* ArtistsListViewModel.swift in Sources */,
 				C2A12B0D2ABBA95C00D0878F /* OperaHouseApp.swift in Sources */,
 				C2A12B3F2ABBAF3D00D0878F /* ArtistPerformance.swift in Sources */,
 			);
@@ -332,6 +405,7 @@
 				C2A12B1E2ABBA95F00D0878F /* OperaHouseTests.swift in Sources */,
 				C2A12B452ABBB40500D0878F /* ArtistModelTests.swift in Sources */,
 				C2A12B432ABBB3E300D0878F /* VenueModelTests.swift in Sources */,
+				C2A12B562ABD310B00D0878F /* ArtistsListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +559,7 @@
 				DEVELOPMENT_TEAM = MTVHX6F533;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OperaHouse/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -514,6 +589,7 @@
 				DEVELOPMENT_TEAM = MTVHX6F533;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OperaHouse/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

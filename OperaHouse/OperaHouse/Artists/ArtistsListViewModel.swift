@@ -1,0 +1,34 @@
+//
+//  ArtistsViewModel.swift
+//  OperaHouse
+//
+//  Created by Tibin Thomas on 21/09/23.
+//
+
+import Foundation
+
+@MainActor
+class ArtistsListViewModel: ObservableObject {
+
+    @Published private(set) var state = LoadingState.loading
+    @Published var artists: [Artist] = []
+    @Published private var error: Error?
+
+    private let client: ArtistsClient
+
+    func getArtists() async throws {
+        do {
+            if let allArtists = try await client.getArtists() {
+                self.artists = allArtists
+            }
+            self.state = artists.isEmpty ? .empty :.loaded
+        } catch {
+            self.artists = []
+            self.state = .error(error)
+        }
+    }
+
+    init(client: ArtistsClient = ArtistsClient()) {
+        self.client = client
+    }
+}
