@@ -29,6 +29,9 @@
 		C2A12B542ABD2E4A00D0878F /* ArtistsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B532ABD2E4A00D0878F /* ArtistsListViewModel.swift */; };
 		C2A12B562ABD310B00D0878F /* ArtistsListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B552ABD310B00D0878F /* ArtistsListViewModelTests.swift */; };
 		C2A12B5A2ABD345700D0878F /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B592ABD345700D0878F /* LoadingState.swift */; };
+		C2A12B602ABDBE1E00D0878F /* ArtistPerformancesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B5F2ABDBE1E00D0878F /* ArtistPerformancesListViewModel.swift */; };
+		C2A12B632ABDBECA00D0878F /* ArtistPerformancesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B622ABDBECA00D0878F /* ArtistPerformancesClient.swift */; };
+		C2A12B652ABDBFEE00D0878F /* ArtistPerformancesListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B642ABDBFEE00D0878F /* ArtistPerformancesListViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,9 @@
 		C2A12B552ABD310B00D0878F /* ArtistsListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsListViewModelTests.swift; sourceTree = "<group>"; };
 		C2A12B582ABD332800D0878F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C2A12B592ABD345700D0878F /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
+		C2A12B5F2ABDBE1E00D0878F /* ArtistPerformancesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistPerformancesListViewModel.swift; sourceTree = "<group>"; };
+		C2A12B622ABDBECA00D0878F /* ArtistPerformancesClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistPerformancesClient.swift; sourceTree = "<group>"; };
+		C2A12B642ABDBFEE00D0878F /* ArtistPerformancesListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistPerformancesListViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,7 @@
 				C2A12B0E2ABBA95C00D0878F /* ContentView.swift */,
 				C2A12B472ABBCF5D00D0878F /* Networking */,
 				C2A12B5B2ABD347400D0878F /* Artists */,
+				C2A12B612ABDBE3300D0878F /* ArtistPerformances */,
 				C2A12B362ABBAA7B00D0878F /* Model */,
 				C2A12B5C2ABD34A700D0878F /* Helpers */,
 				C2A12B102ABBA95E00D0878F /* Assets.xcassets */,
@@ -151,6 +158,7 @@
 			children = (
 				C2A12B1D2ABBA95F00D0878F /* OperaHouseTests.swift */,
 				C2A12B552ABD310B00D0878F /* ArtistsListViewModelTests.swift */,
+				C2A12B642ABDBFEE00D0878F /* ArtistPerformancesListViewModelTests.swift */,
 				C2A12B462ABBB5AC00D0878F /* ModelTests */,
 			);
 			path = OperaHouseTests;
@@ -191,6 +199,7 @@
 			children = (
 				C2A12B5E2ABD34F800D0878F /* Core */,
 				C2A12B512ABD1CAB00D0878F /* ArtistsClient.swift */,
+				C2A12B622ABDBECA00D0878F /* ArtistPerformancesClient.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -228,6 +237,14 @@
 				C2A12B4A2ABBCFEE00D0878F /* HttpClient.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		C2A12B612ABDBE3300D0878F /* ArtistPerformances */ = {
+			isa = PBXGroup;
+			children = (
+				C2A12B5F2ABDBE1E00D0878F /* ArtistPerformancesListViewModel.swift */,
+			);
+			path = ArtistPerformances;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,9 +402,11 @@
 				C2A12B0F2ABBA95C00D0878F /* ContentView.swift in Sources */,
 				C2A12B3A2ABBABC400D0878F /* Venue.swift in Sources */,
 				C2A12B522ABD1CAB00D0878F /* ArtistsClient.swift in Sources */,
+				C2A12B632ABDBECA00D0878F /* ArtistPerformancesClient.swift in Sources */,
 				C2A12B502ABC779400D0878F /* AppEndPoint.swift in Sources */,
 				C2A12B382ABBAAA300D0878F /* MusicPerformance.swift in Sources */,
 				C2A12B4D2ABC774E00D0878F /* URLEndpoint.swift in Sources */,
+				C2A12B602ABDBE1E00D0878F /* ArtistPerformancesListViewModel.swift in Sources */,
 				C2A12B4B2ABBCFEE00D0878F /* HttpClient.swift in Sources */,
 				C2A12B5A2ABD345700D0878F /* LoadingState.swift in Sources */,
 				C2A12B3C2ABBAC1200D0878F /* Artist.swift in Sources */,
@@ -404,6 +423,7 @@
 			files = (
 				C2A12B1E2ABBA95F00D0878F /* OperaHouseTests.swift in Sources */,
 				C2A12B452ABBB40500D0878F /* ArtistModelTests.swift in Sources */,
+				C2A12B652ABDBFEE00D0878F /* ArtistPerformancesListViewModelTests.swift in Sources */,
 				C2A12B432ABBB3E300D0878F /* VenueModelTests.swift in Sources */,
 				C2A12B562ABD310B00D0878F /* ArtistsListViewModelTests.swift in Sources */,
 			);

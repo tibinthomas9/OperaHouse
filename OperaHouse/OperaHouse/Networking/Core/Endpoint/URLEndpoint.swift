@@ -24,7 +24,7 @@ extension URLEndpoint {
         var components = URLComponents()
         components.scheme = scheme
         components.host = host
-        components.path = path
+        components.path = "\(path)"
         components.queryItems = queryItems
         return components.url
     }

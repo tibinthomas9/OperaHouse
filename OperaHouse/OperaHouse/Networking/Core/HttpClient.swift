@@ -22,6 +22,7 @@ class NetworkClient: HttpClient {
             throw APIError.unknown
         }
         guard validStatus.contains(response.statusCode) else {
+            print(response)
             throw APIError.networkError(response.statusCode)
         }
         do {
