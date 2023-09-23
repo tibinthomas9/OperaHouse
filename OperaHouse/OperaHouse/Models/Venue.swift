@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Venue: Codable {
+struct Venue: Codable, Identifiable {
     let id: Int
     let name: String
     let sortId: Int

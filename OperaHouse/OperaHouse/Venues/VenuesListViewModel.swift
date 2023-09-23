@@ -19,7 +19,7 @@ class VenuesListViewModel: ObservableObject {
     func getVenues() async throws {
         do {
             if let allVenues = try await client.getVenues() {
-                self.venues = allVenues.sorted { $0.name < $1.name }
+                self.venues = allVenues.sorted { $0.sortId < $1.sortId }
             }
             self.state = venues.isEmpty ? .empty :.loaded
         } catch {
