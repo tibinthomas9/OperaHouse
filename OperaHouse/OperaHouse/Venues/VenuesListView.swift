@@ -11,7 +11,7 @@ struct VenuesListView: View {
     @StateObject private var viewModel = VenuesListViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             VStack {
                 switch viewModel.state {
                 case .loading:
