@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ArtistPerformance: MusicPerformance {
+struct ArtistPerformance: MusicPerformance, Identifiable {
     var id: Int
     var date: String
     let artistId: Int

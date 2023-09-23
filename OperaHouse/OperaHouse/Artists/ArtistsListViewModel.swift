@@ -19,7 +19,7 @@ class ArtistsListViewModel: ObservableObject {
     func getArtists() async throws {
         do {
             if let allArtists = try await client.getArtists() {
-                self.artists = allArtists
+                self.artists = allArtists.sorted { $0.name < $1.name }
             }
             self.state = artists.isEmpty ? .empty :.loaded
         } catch {

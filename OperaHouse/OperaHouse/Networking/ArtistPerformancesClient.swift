@@ -8,22 +8,24 @@
 import Foundation
 
 protocol ArtistPerformancesService {
-    func getArtistPerformances(artistId: String, fromDate: String, toDate: String) async throws -> [ArtistPerformance]?
+    func getArtistPerformances(artistId: String,
+                               fromDate: String,
+                               toDate: String) async throws -> [ArtistPerformance]?
 }
-class ArtistPerformancesClient: ArtistPerformancesService {
 
-    func getArtistPerformances(artistId: String, fromDate: String, toDate: String) async throws -> [ArtistPerformance]? {
-        guard let url =  AppEndPoint.artistPerformance(artistId: artistId, fromDate: fromDate, toDate: toDate).url() else {
-            return nil
-        }
+class ArtistPerformancesClient: ArtistPerformancesService {
+    func getArtistPerformances(artistId: String,
+                               fromDate: String,
+                               toDate: String) async throws -> [ArtistPerformance]? {
+        guard let url =  AppEndPoint.artistPerformance(artistId: artistId,
+                                                       fromDate: fromDate,
+                                                       toDate: toDate).url() else { return nil }
         do {
-            if let artistPerformances = try await NetworkClient.shared.fetchHttpData(from: url, responseType: [ArtistPerformance]?.self) {
+            if let artistPerformances = try await
+                NetworkClient.shared.fetchHttpData(from: url,
+                                                   responseType: [ArtistPerformance]?.self) {
                 return artistPerformances
-            } else {
-                return nil
-            }
-        } catch {
-            throw error
-        }
+            } else { return nil }
+        } catch { throw error }
     }
 }

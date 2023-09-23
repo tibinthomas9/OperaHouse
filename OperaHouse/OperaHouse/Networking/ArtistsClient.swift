@@ -10,20 +10,15 @@ import Foundation
 protocol ArtistsService {
     func getArtists() async throws -> [Artist]?
 }
-class ArtistsClient: ArtistsService {
 
+class ArtistsClient: ArtistsService {
     func getArtists() async throws -> [Artist]? {
-        guard let url =  AppEndPoint.artists.url() else {
-            return nil
-        }
+        guard let url =  AppEndPoint.artists.url() else { return nil }
         do {
-            if let artists = try await NetworkClient.shared.fetchHttpData(from: url, responseType: [Artist]?.self) {
+            if let artists = try await NetworkClient.shared.fetchHttpData(from: url,
+                                                                          responseType: [Artist]?.self) {
                 return artists
-            } else {
-                return nil
-            }
-        } catch {
-            throw error
-        }
+            } else { return nil }
+        } catch { throw error }
     }
 }

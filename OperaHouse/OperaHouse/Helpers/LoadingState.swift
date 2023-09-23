@@ -28,4 +28,3 @@ enum LoadingState: Equatable {
         }
     }
 }
-
