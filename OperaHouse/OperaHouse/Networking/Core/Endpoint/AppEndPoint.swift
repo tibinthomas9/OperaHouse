@@ -19,7 +19,7 @@ extension AppEndPoint {
         case .artists:
             return "/artists"
         case .venues:
-            return "/venue"
+            return "/venues"
         case .artistPerformance(let artistId, _, _):
             return "/artists/\(artistId)/performances"
         }

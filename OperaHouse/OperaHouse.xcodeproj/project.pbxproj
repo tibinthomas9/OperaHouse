@@ -46,6 +46,9 @@
 		C2A12B7F2ABE5D2B00D0878F /* DateExtesions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B7E2ABE5D2B00D0878F /* DateExtesions.swift */; };
 		C2A12B822ABE664000D0878F /* ArtistPerformancesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B812ABE664000D0878F /* ArtistPerformancesView.swift */; };
 		C2A12B842ABE6B6500D0878F /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B832ABE6B6500D0878F /* StringExtensions.swift */; };
+		C2A12B862ABE799100D0878F /* VenuesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B852ABE799100D0878F /* VenuesClient.swift */; };
+		C2A12B882ABE7A0500D0878F /* VenuesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B872ABE7A0500D0878F /* VenuesListViewModel.swift */; };
+		C2A12B8A2ABE7A4D00D0878F /* VenuesListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B892ABE7A4D00D0878F /* VenuesListViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +112,9 @@
 		C2A12B7E2ABE5D2B00D0878F /* DateExtesions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtesions.swift; sourceTree = "<group>"; };
 		C2A12B812ABE664000D0878F /* ArtistPerformancesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistPerformancesView.swift; sourceTree = "<group>"; };
 		C2A12B832ABE6B6500D0878F /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		C2A12B852ABE799100D0878F /* VenuesClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesClient.swift; sourceTree = "<group>"; };
+		C2A12B872ABE7A0500D0878F /* VenuesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesListViewModel.swift; sourceTree = "<group>"; };
+		C2A12B892ABE7A4D00D0878F /* VenuesListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesListViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +196,7 @@
 				C2A12B1D2ABBA95F00D0878F /* OperaHouseTests.swift */,
 				C2A12B7A2ABE31F200D0878F /* EndPointTests.swift */,
 				C2A12B552ABD310B00D0878F /* ArtistsListViewModelTests.swift */,
+				C2A12B892ABE7A4D00D0878F /* VenuesListViewModelTests.swift */,
 				C2A12B642ABDBFEE00D0878F /* ArtistPerformancesListViewModelTests.swift */,
 				C2A12B462ABBB5AC00D0878F /* ModelTests */,
 			);
@@ -231,6 +238,7 @@
 			children = (
 				C2A12B5E2ABD34F800D0878F /* Core */,
 				C2A12B512ABD1CAB00D0878F /* ArtistsClient.swift */,
+				C2A12B852ABE799100D0878F /* VenuesClient.swift */,
 				C2A12B622ABDBECA00D0878F /* ArtistPerformancesClient.swift */,
 			);
 			path = Networking;
@@ -252,6 +260,7 @@
 				C2A12B662ABDD2E500D0878F /* ArtistsListView.swift */,
 				C2A12B762ABE2B6000D0878F /* ArtistsRowView.swift */,
 				C2A12B532ABD2E4A00D0878F /* ArtistsListViewModel.swift */,
+				C2A12B872ABE7A0500D0878F /* VenuesListViewModel.swift */,
 			);
 			path = Artists;
 			sourceTree = "<group>";
@@ -468,6 +477,7 @@
 				C2A12B0F2ABBA95C00D0878F /* ContentView.swift in Sources */,
 				C2A12B3A2ABBABC400D0878F /* Venue.swift in Sources */,
 				C2A12B522ABD1CAB00D0878F /* ArtistsClient.swift in Sources */,
+				C2A12B862ABE799100D0878F /* VenuesClient.swift in Sources */,
 				C2A12B772ABE2B6000D0878F /* ArtistsRowView.swift in Sources */,
 				C2A12B632ABDBECA00D0878F /* ArtistPerformancesClient.swift in Sources */,
 				C2A12B7D2ABE5B3000D0878F /* ArtistPerformancesListView.swift in Sources */,
@@ -490,6 +500,7 @@
 				C2A12B3C2ABBAC1200D0878F /* Artist.swift in Sources */,
 				C2A12B702ABE2A4300D0878F /* CircledBorderView.swift in Sources */,
 				C2A12B492ABBCFBB00D0878F /* APIError.swift in Sources */,
+				C2A12B882ABE7A0500D0878F /* VenuesListViewModel.swift in Sources */,
 				C2A12B542ABD2E4A00D0878F /* ArtistsListViewModel.swift in Sources */,
 				C2A12B0D2ABBA95C00D0878F /* OperaHouseApp.swift in Sources */,
 				C2A12B3F2ABBAF3D00D0878F /* ArtistPerformance.swift in Sources */,
@@ -505,6 +516,7 @@
 				C2A12B7B2ABE31F200D0878F /* EndPointTests.swift in Sources */,
 				C2A12B652ABDBFEE00D0878F /* ArtistPerformancesListViewModelTests.swift in Sources */,
 				C2A12B432ABBB3E300D0878F /* VenueModelTests.swift in Sources */,
+				C2A12B8A2ABE7A4D00D0878F /* VenuesListViewModelTests.swift in Sources */,
 				C2A12B562ABD310B00D0878F /* ArtistsListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
