@@ -22,5 +22,4 @@ final class ArtistPerformancesListViewModelTests: XCTestCase {
         XCTAssertEqual(viewModel.state, .loaded)
         XCTAssert(viewModel.artistPerformances.count > 0)
     }
-
 }

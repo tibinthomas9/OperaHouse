@@ -26,7 +26,7 @@ struct VenuesListView: View {
                             try? await viewModel.getVenues()
                         }
                 }
-            }.navigationTitle("Venues")
+            }.navigationTitle(Tab.venues.title)
                 .task {
                     try? await viewModel.getVenues()
                 }
@@ -40,8 +40,7 @@ struct VenuesListView: View {
             List {
                 ForEach(venues) { venue in
                     NavigationLink {
-                        Text("Coming")
-                       // VenuePerformancesListView(Venue: Venue)
+                        VenuePerformancesListView(venue: venue)
                     } label: {
                         VenuesRowView(venue: venue)
                     }

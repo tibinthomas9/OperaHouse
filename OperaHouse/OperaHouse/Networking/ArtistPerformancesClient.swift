@@ -17,7 +17,7 @@ class ArtistPerformancesClient: ArtistPerformancesService {
     func getArtistPerformances(artistId: String,
                                fromDate: String,
                                toDate: String) async throws -> [ArtistPerformance]? {
-        guard let url =  AppEndPoint.artistPerformance(artistId: artistId,
+        guard let url =  AppEndPoint.artistPerformances(artistId: artistId,
                                                        fromDate: fromDate,
                                                        toDate: toDate).url() else { return nil }
         do {

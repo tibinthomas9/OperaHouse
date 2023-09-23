@@ -27,6 +27,7 @@ struct TabContainerView: View {
 struct TabContainerView_Previews: PreviewProvider {
     static var previews: some View {
         TabContainerView()
+            .preferredColorScheme(.dark)
             .environment(\.locale, .init(identifier: "fr-CA"))
     }
 }

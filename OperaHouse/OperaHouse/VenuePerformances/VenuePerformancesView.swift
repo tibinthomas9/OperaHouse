@@ -1,5 +1,5 @@
 //
-//  ArtistPerformancesView.swift
+//  VenuePerformancesView.swift
 //  OperaHouse
 //
 //  Created by Tibin Thomas on 22/09/23.
@@ -7,18 +7,19 @@
 
 import SwiftUI
 
-struct ArtistPerformancesView: View {
+struct VenuePerformancesView: View {
 
-    var performance: ArtistPerformance
+    var performance: VenuePerformance
     private var imageUrlString: String {
-        return ImageEndPoint.venue(name: performance.venue.name).url()?.absoluteString ?? ""
+        return ImageEndPoint.artist(name: performance.artist.name).url()?.absoluteString ?? ""
     }
 
     var body: some View {
         HStack {
+            image
             details
             Spacer()
-            image
+
         }
     }
 
@@ -29,18 +30,16 @@ struct ArtistPerformancesView: View {
     }
 
     var details: some View {
-        VStack(alignment: .leading) {
-            Spacer()
+        VStack(alignment: .leading, spacing: 5) {
             name
             date
-            Spacer()
         }
     }
 
     var name: some View {
-        Text(performance.venue.name)
-            .font(.title3)
-            .foregroundColor(.teal)
+        Text(performance.artist.name)
+            .font(.title2)
+            .foregroundColor(.brown)
             .bold()
     }
 
@@ -50,17 +49,17 @@ struct ArtistPerformancesView: View {
                 .foregroundColor(.accentColor)
                 .font(.footnote)
             Text(performance.date.toDate()?.getFullFormat() ?? "")
-                .font(.body)
+                .font(.subheadline)
                 .foregroundColor(.accentColor)
         }.padding(.vertical)
     }
 }
 
-struct ArtistPerformancesView_Previews: PreviewProvider {
+struct VenuePerformancesView_Previews: PreviewProvider {
     static var previews: some View {
-        ArtistPerformancesView(performance: ArtistPerformance(id: 1,
+        VenuePerformancesView(performance: VenuePerformance(id: 1,
                                                               date: "2020",
-                                                              artistId: 2,
-                                                              venue: Venue(id: 1, name: "Test", sortId: 1)) )
+                                                            venueId: 2,
+                                                            artist: Artist(id: 1, genre: "Genre", name: "Artist")) )
     }
 }

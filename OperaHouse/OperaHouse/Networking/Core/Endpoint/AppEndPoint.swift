@@ -10,7 +10,8 @@ import Foundation
 enum AppEndPoint: URLEndpoint {
     case artists
     case venues
-    case artistPerformance(artistId: String, fromDate: String, toDate: String)
+    case artistPerformances(artistId: String, fromDate: String, toDate: String)
+    case venuePerformances(venueId: String, fromDate: String, toDate: String)
 }
 extension AppEndPoint {
 
@@ -20,14 +21,18 @@ extension AppEndPoint {
             return "/artists"
         case .venues:
             return "/venues"
-        case .artistPerformance(let artistId, _, _):
+        case .artistPerformances(let artistId, _, _):
             return "/artists/\(artistId)/performances"
+        case .venuePerformances(let venueId, _, _):
+            return "/venues/\(venueId)/performances"
         }
     }
 
     var queryItems: [URLQueryItem]? {
         switch self {
-        case .artistPerformance(artistId: _, fromDate: let fromDate, toDate: let toDate):
+        case .artistPerformances(artistId: _, fromDate: let fromDate, toDate: let toDate):
+            return [URLQueryItem(name: "from", value: fromDate), URLQueryItem(name: "to", value: toDate)]
+        case .venuePerformances(venueId: _, fromDate: let fromDate, toDate: let toDate):
             return [URLQueryItem(name: "from", value: fromDate), URLQueryItem(name: "to", value: toDate)]
         default:
             return nil

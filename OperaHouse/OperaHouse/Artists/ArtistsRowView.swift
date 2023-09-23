@@ -37,7 +37,7 @@ struct ArtistsRowView: View {
     var name: some View {
         Text(artist.name)
             .font(.title2)
-            .foregroundColor(.primary)
+            .foregroundColor(.brown)
             .bold()
     }
 

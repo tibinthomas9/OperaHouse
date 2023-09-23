@@ -26,7 +26,7 @@ struct ArtistsListView: View {
                             try? await viewModel.getArtists()
                         }
                 }
-            }.navigationTitle("Artists")
+            }.navigationTitle(Tab.artists.title)
                 .task {
                     try? await viewModel.getArtists()
                 }

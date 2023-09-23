@@ -21,6 +21,7 @@ class NetworkClient: HttpClient {
         guard let (data, response) = try await URLSession.shared.data(from: from) as? (Data, HTTPURLResponse) else {
             throw APIError.unknown
         }
+        print("JSON response : \(response)")
         guard validStatus.contains(response.statusCode) else {
             print(response)
             throw APIError.networkError(response.statusCode)

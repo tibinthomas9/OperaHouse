@@ -37,7 +37,7 @@ struct VenuesRowView: View {
     var name: some View {
         Text(venue.name)
             .font(.title2)
-            .foregroundColor(.primary)
+            .foregroundColor(.teal)
             .bold()
     }
 

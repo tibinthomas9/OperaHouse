@@ -52,6 +52,12 @@
 		C2A12B8D2ABE7CD800D0878F /* VenuesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B8C2ABE7CD800D0878F /* VenuesListView.swift */; };
 		C2A12B8F2ABE7D3700D0878F /* VenuesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B8E2ABE7D3700D0878F /* VenuesRowView.swift */; };
 		C2A12B912ABE7EBD00D0878F /* TabContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B902ABE7EBD00D0878F /* TabContainerView.swift */; };
+		C2A12B982ABF441F00D0878F /* VenuePerformancesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B952ABF441F00D0878F /* VenuePerformancesListViewModel.swift */; };
+		C2A12B992ABF441F00D0878F /* VenuePerformancesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B962ABF441F00D0878F /* VenuePerformancesListView.swift */; };
+		C2A12B9A2ABF441F00D0878F /* VenuePerformancesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B972ABF441F00D0878F /* VenuePerformancesView.swift */; };
+		C2A12B9C2ABF448B00D0878F /* VenuePerformancesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B9B2ABF448B00D0878F /* VenuePerformancesClient.swift */; };
+		C2A12B9E2ABF515000D0878F /* VenuePerformancesListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B9D2ABF515000D0878F /* VenuePerformancesListViewModelTests.swift */; };
+		C2A12BA02ABF526000D0878F /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A12B9F2ABF526000D0878F /* ExtensionsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +127,12 @@
 		C2A12B8C2ABE7CD800D0878F /* VenuesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesListView.swift; sourceTree = "<group>"; };
 		C2A12B8E2ABE7D3700D0878F /* VenuesRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesRowView.swift; sourceTree = "<group>"; };
 		C2A12B902ABE7EBD00D0878F /* TabContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabContainerView.swift; sourceTree = "<group>"; };
+		C2A12B952ABF441F00D0878F /* VenuePerformancesListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuePerformancesListViewModel.swift; sourceTree = "<group>"; };
+		C2A12B962ABF441F00D0878F /* VenuePerformancesListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuePerformancesListView.swift; sourceTree = "<group>"; };
+		C2A12B972ABF441F00D0878F /* VenuePerformancesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuePerformancesView.swift; sourceTree = "<group>"; };
+		C2A12B9B2ABF448B00D0878F /* VenuePerformancesClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuePerformancesClient.swift; sourceTree = "<group>"; };
+		C2A12B9D2ABF515000D0878F /* VenuePerformancesListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuePerformancesListViewModelTests.swift; sourceTree = "<group>"; };
+		C2A12B9F2ABF526000D0878F /* ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,15 +186,16 @@
 				C2A12B0C2ABBA95C00D0878F /* OperaHouseApp.swift */,
 				C2A12B0E2ABBA95C00D0878F /* ContentView.swift */,
 				C2A12B902ABE7EBD00D0878F /* TabContainerView.swift */,
-				C2A12B8B2ABE7C9C00D0878F /* Venues */,
 				C2A12B5B2ABD347400D0878F /* Artists */,
 				C2A12B612ABDBE3300D0878F /* ArtistPerformances */,
+				C2A12B8B2ABE7C9C00D0878F /* Venues */,
+				C2A12B942ABF441F00D0878F /* VenuePerformances */,
 				C2A12B362ABBAA7B00D0878F /* Models */,
 				C2A12B472ABBCF5D00D0878F /* Networking */,
 				C2A12B732ABE2AC800D0878F /* Loaders */,
-				C2A12B682ABE29C500D0878F /* Custom Views */,
 				C2A12B5C2ABD34A700D0878F /* Helpers */,
 				C2A12B802ABE5D3200D0878F /* Extensions */,
+				C2A12B682ABE29C500D0878F /* Custom Views */,
 				C2A12B102ABBA95E00D0878F /* Assets.xcassets */,
 				C2A12B582ABD332800D0878F /* Info.plist */,
 				C2A12B122ABBA95E00D0878F /* Preview Content */,
@@ -206,6 +219,8 @@
 				C2A12B552ABD310B00D0878F /* ArtistsListViewModelTests.swift */,
 				C2A12B892ABE7A4D00D0878F /* VenuesListViewModelTests.swift */,
 				C2A12B642ABDBFEE00D0878F /* ArtistPerformancesListViewModelTests.swift */,
+				C2A12B9D2ABF515000D0878F /* VenuePerformancesListViewModelTests.swift */,
+				C2A12B9F2ABF526000D0878F /* ExtensionsTests.swift */,
 				C2A12B462ABBB5AC00D0878F /* ModelTests */,
 			);
 			path = OperaHouseTests;
@@ -248,6 +263,7 @@
 				C2A12B512ABD1CAB00D0878F /* ArtistsClient.swift */,
 				C2A12B852ABE799100D0878F /* VenuesClient.swift */,
 				C2A12B622ABDBECA00D0878F /* ArtistPerformancesClient.swift */,
+				C2A12B9B2ABF448B00D0878F /* VenuePerformancesClient.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -332,11 +348,21 @@
 		C2A12B8B2ABE7C9C00D0878F /* Venues */ = {
 			isa = PBXGroup;
 			children = (
-				C2A12B872ABE7A0500D0878F /* VenuesListViewModel.swift */,
 				C2A12B8C2ABE7CD800D0878F /* VenuesListView.swift */,
 				C2A12B8E2ABE7D3700D0878F /* VenuesRowView.swift */,
+				C2A12B872ABE7A0500D0878F /* VenuesListViewModel.swift */,
 			);
 			path = Venues;
+			sourceTree = "<group>";
+		};
+		C2A12B942ABF441F00D0878F /* VenuePerformances */ = {
+			isa = PBXGroup;
+			children = (
+				C2A12B962ABF441F00D0878F /* VenuePerformancesListView.swift */,
+				C2A12B972ABF441F00D0878F /* VenuePerformancesView.swift */,
+				C2A12B952ABF441F00D0878F /* VenuePerformancesListViewModel.swift */,
+			);
+			path = VenuePerformances;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -490,6 +516,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2A12B982ABF441F00D0878F /* VenuePerformancesListViewModel.swift in Sources */,
+				C2A12B992ABF441F00D0878F /* VenuePerformancesListView.swift in Sources */,
+				C2A12B9A2ABF441F00D0878F /* VenuePerformancesView.swift in Sources */,
 				C2A12B412ABBAFF000D0878F /* VenuePerformance.swift in Sources */,
 				C2A12B0F2ABBA95C00D0878F /* ContentView.swift in Sources */,
 				C2A12B3A2ABBABC400D0878F /* Venue.swift in Sources */,
@@ -522,6 +551,7 @@
 				C2A12B882ABE7A0500D0878F /* VenuesListViewModel.swift in Sources */,
 				C2A12B8D2ABE7CD800D0878F /* VenuesListView.swift in Sources */,
 				C2A12B542ABD2E4A00D0878F /* ArtistsListViewModel.swift in Sources */,
+				C2A12B9C2ABF448B00D0878F /* VenuePerformancesClient.swift in Sources */,
 				C2A12B0D2ABBA95C00D0878F /* OperaHouseApp.swift in Sources */,
 				C2A12B3F2ABBAF3D00D0878F /* ArtistPerformance.swift in Sources */,
 			);
@@ -538,6 +568,8 @@
 				C2A12B432ABBB3E300D0878F /* VenueModelTests.swift in Sources */,
 				C2A12B8A2ABE7A4D00D0878F /* VenuesListViewModelTests.swift in Sources */,
 				C2A12B562ABD310B00D0878F /* ArtistsListViewModelTests.swift in Sources */,
+				C2A12BA02ABF526000D0878F /* ExtensionsTests.swift in Sources */,
+				C2A12B9E2ABF515000D0878F /* VenuePerformancesListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -697,6 +729,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -727,6 +760,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
