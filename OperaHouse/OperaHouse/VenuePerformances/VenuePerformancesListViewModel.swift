@@ -13,7 +13,7 @@ class VenuePerformancesListViewModel: ObservableObject {
     @Published private(set) var state = LoadingState.loading
     @Published var venuePerformances: [VenuePerformance] = []
     @Published private var error: Error?
-    private let client: VenuePerformancesClient
+    private let client: VenuePerformancesService
 
     func getVenuePerformances(venueId: String,
                               fromDate: String? = nil,
@@ -35,7 +35,7 @@ class VenuePerformancesListViewModel: ObservableObject {
         }
     }
 
-    init(client: VenuePerformancesClient = VenuePerformancesClient()) {
+    init(client: VenuePerformancesService = VenuePerformancesClient()) {
         self.client = client
     }
 }
