@@ -14,7 +14,7 @@ class ArtistsListViewModel: ObservableObject {
     @Published var artists: [Artist] = []
     @Published private var error: Error?
 
-    private let client: ArtistsService
+    private let client: any ArtistsService
 
     func getArtists() async throws {
         do {
@@ -28,7 +28,7 @@ class ArtistsListViewModel: ObservableObject {
         }
     }
 
-    init(client: ArtistsService = ArtistsClient()) {
+    init(client: any ArtistsService = ArtistsClient()) {
         self.client = client
     }
 }
